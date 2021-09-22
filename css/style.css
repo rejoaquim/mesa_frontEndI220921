@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  :root {
+    scroll-behavior: smooth;
+  }
+  
+  header {
+    background-color: purple;
+    color: rgb(230, 216, 216);
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+  }
+  
+  header > a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  h1 {
+    font-weight: 900;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  nav a {
+    color: rgb(145, 98, 216);
+    font-weight: 1000;
+    font-size: 1.25rem;
+    text-decoration: none;
+    padding: 0.4rem;
+    transition: 0.1s ease-in-out;
+  }
+  
+  nav a:hover {
+    filter: brightness(0.5);
+  }
+  
+  #banner {
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url(../img/runescaps.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #infos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    background-color: purple;
+  }
+  
+  #infos section {
+    margin: 0.5rem;
+  }
+  
+  #infos section h2 {
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    font-family: monospace;
+  }
+  
+  #infos section p {
+    text-align: justify;
+    line-height: 1.6rem;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    :root {
+      font-size: 14px;
+    }
+  
+    #conteudo {
+      grid-template-columns: 1fr;
+    }
+  
+    #conteudo section {
+      margin: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 425px) {
+    :root {
+      font-size: 12px;
+    }
+  
+    header {
+      flex-direction: column;
+    }
+  
+    header > a {
+      margin-bottom: 0.5rem;
+    }
+  
+    p {
+      font-size: 1.2rem;
+    }
+  }
